@@ -1,0 +1,11 @@
+.container{
+    border: 2px solid #e803fc
+ width: 30%;
+ height: 80%
+ border-radiurs: 16px;
+ margin: 250px;
+}
+#age_input{
+    padding;20px
+    width: 80px
+}

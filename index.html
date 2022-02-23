@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js" integrity="sha512-yFjZbTYRCJodnuyGlsKamNE/LlEaEAxSUDe5+u61mV8zzqJVFOH7TnULE2/PP/l5vKWpUNnF4VGVkXh3MjgLsg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+<center>
+    <div class="container">
+  <h1>Age Calculator</h1>
+  <h3>This is an app that calculates your age in hours, minutes and seconds<br>
+<br>  
+Write your age in years
+</h3>
+<input type="number" id="age_input" placeholder="Enter your age in years">
+<button id="btn" onclick="calculate()"><i class="fa-solid fa-calculator"></i></button>
+<br><br>
+<h1 id="answer"></h1>
+</center>
+</body>
+<script>
+function calculate(){
+var cal=Number(document.getElementById("age_input").value);
+document.getElementById("answer").innerHTML="You are " + cal* 24* 365 + " hours old "}
+</script>
+<script src="mian.js"></script>
+</html>
